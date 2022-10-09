@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />              
+</head>
+<body>
+           <!-- Modal -->
+           <div class="custom-modal">
+            <button id="closeModal">X</button>
+            <form>
+              <h2 class="animate__animated animate__fadeInDown">Edit User</h2>
+              <div class="animate__animated animate__fadeInDown">
+                   <label for="lastName">First Name</label>
+                  <input type="text" id="_first_name">
+              </div>
+              <div  class="animate__animated animate__fadeInDown"> 
+                  <label for="lastName">Last Name</label>  
+                  <input type="text" id="_lastName">
+              </div>
+              <div class="animate__animated animate__fadeInDown">
+                <label for="country">Country</label>  
+                <input type="text" id="_country">
+            </div>
+            <div class="animate__animated animate__fadeInDown">
+                <label for="email">Email</label>  
+                <input type="email" id="_email">
+            </div>
+              <div class="animate__animated animate__fadeInDown">
+                  <label for="password">password</label>
+                  <input type="password" id="_password">
+              </div>
+              <div style="margin-top:15px ;" class="animate__animated animate__fadeInDown">
+                  <button id="editProfile">Edit Profile</button>
+                  <button id="deleteProfile">Delete Profile</button>
+              </div>
+            </form>
+      </div>
+        <!-- Header section -->
+        <div class="headerfixed">
+            <!-- Header start -->
+        <div class="header">
+            <!-- Wrapper start of heading-->
+            <div class="wrapper">
+                <!-- homaj logo -->
+                <a href="home.html"><img src="./img/logo_social.png" width=120 height=45 class="logoletter"/></a>
+                <!-- Search bar -->
+                <form  id="searching">
+                  <input type="text" name="search" placeholder="Search.." id="search">
+                </form>
+                
+                <!-- icon bar to navigate to all pages -->
+                <div class="icon-bar">
+                 <!-- <ul>
+                     <li style="border-bottom: 4px solid #f1f1f1;"><a href="home.html"><img src="../login/home.png" ><p id="p1">Home</p></a></li>
+                     <li><a href="#"><img src="../login/profile.png"><p id="p2">Profile</p></a> </li>
+                 </ul>	  -->
+                 <div class="iconBox1">
+                    <i onclick="homePage()" id="homeProfile" class="fa-solid fa-house"></i>
+                    <i  id="myProfile" class="fa-solid fa-user"></i>
+                    <i onclick="myBeastFriends()" id="friendIcon" class="fa-solid fa-user-group"></i>
+                    <i id="myGames" class="fa-solid fa-gamepad"></i>
+                </div>
+                   
+                </div>
+                <!-- Ending of Icon bar -->
+    
+    
+            </div>
+            <!-- Wrapper End of heading -->
+    
+        </div>
+        <!-- End of header -->
+        </div>
+        <!-- End of header section -->
+    
+       <div  class="container">
+        <!-- Content Section -->
+        <div class="content">
+            <div class="leftfixed">
+                <!-- start sidebar left -->
+                <div class="sidebarleft" >
+                    <div class="photo_add_profile">
+                         <input class="custom-file-input" type="file" id="photo_profile">
+                         <button  class="photo_add">Photo Add</button>
+                    </div>
+                    <img id="img_profile" src="../profile/upload.png"/>
+                    <p id="sidename"> </p>
+                    <p id="lastName">  </p>
+                    <p id="country"></p>
+                    <button id="viewall">View All</button>
+                    <hr>
+                    <p id="email_">asdasd@gmail.com</p>
+                    <p id="logout"><a>Log Out</a></p>
+                </div>
+                <!-- End of sidebar left -->
+            </div>
+         </div>
+            <!-- Start wrapper -->
+            <div class="wrapper">
+    
+                <!-- Start Left section -->
+                <!-- End of leftfixed -->
+             
+              
+              
+              <!-- start of main content section -->
+                <div class="mainnotfixed" id="mainnotfixed">
+                    <!-- Start of post an content -->
+                    <div class="main mainpost" style="margin-bottom:20px; padding-bottom:10px;">	
+    
+                        <div class="userimg"><img id="user_img" src="../profile/upload.png"/>
+                            </div>
+                            <div class="username">				 
+                            <p id="namePost" class="name" style="top:15px;">Rajkumar Rocktim Narayan Singha</p>
+                            </div>
+                            <p class="quotes">
+                                <textarea id="mypara" placeholder="Share an article ,photo ,video or idea."></textarea>
+                            </p>
+                            <!-- image load to post -->
+                            <div id="postLoadPhoto">
+                                <img id="load2" class="postimg" src=""/>
+                            </div>
+    
+                            <div class="postbar">
+                                <input type="file" id="myFileInput"/>
+                                <!-- <button type="button" class="imgbttn" id="imgbttn">&#x1f4f7; Images</button> -->
+                                <button type="button"  class="imgbttn" id="postmypost">Post</button>
+                            </div>
+    
+                    </div>
+                    <!-- End of post an content -->
+                    <hr>
+    
+                    <!-- posted content view -->
+                    <div class="allpost">
+            
+    
+    
+                    </div>
+                    <!-- end of posted content view -->
+    
+                    <!-- button to view more previous post -->
+                    <button type="button" id="viewmore" class="viewmore" onclick="newpost();">View More</button>
+                </div>
+                <!-- End of main content section -->
+                <!-- start of right section suggestion user -->
+                <div class="rightfixed">    
+                    <!-- Start of right fixed -->
+                    <div class="sidebarright">
+                        <h2 style="text-align:center;">My friends</h2>
+                    </div>
+                    <!-- End of right fixed -->
+    
+                </div>
+                <!-- End of right section suggestion user -->
+    
+    
+                <!-- Start of about homaj -->
+                <div class="rightfixed">
+                    
+                    <div class="sidebarright" style="width: 114%; padding: 4px;margin-top: 20px;height: 150px;">
+                        <hr style="top: -25px;">
+                    <div class="foot">
+    
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Privacy and Policy</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                        <img src="login/society-hover.png"/>
+                        <p>------------------</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- End of about homaj -->
+                <!-- message bar at the bottom -->
+                <!-- <div class="message" id="msg1">
+                    <button id="msg2">Messaging</button>
+                    <p> No New Messages.</p>
+                </div> -->
+                <!-- End of message bar at the bottom -->
+    
+            </div>
+            <!-- End of wrapper -->
+    
+        </div>
+    </div>
+  
+    
+    <div class="sidebarright" id ="myFriends" >
+        <h2 style="text-align:center;">My friends</h2>
+    </div>
+
+
+
+    
+
+
+
+        <!-- End of content section -->
+        <script src="./js/Session.js"></script>
+        <script src="./js/User.js"></script>
+        <script src="./js/Comment.js"></script>
+        <script src="./js/Post.js"></script>
+    	<script src="./js/home.js"></script>
+        <script src="./js/click.js"></script>
+</body>
+</html>

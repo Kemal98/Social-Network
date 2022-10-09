@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="header">
+		<div class="wrapper_">
+			<img src="./img/logo_social.png" width=160 height=70 class="logoletter"/>
+			<form class="loginuser">
+				<table id="login">
+					<tr style="height: 20px">
+						<td><label for="email">Email:</label> </td>
+						<td><label for="logpassword">Password:</label></td>
+					</tr>
+					<tr>
+						<td><input type="email" id="login_email" class="inputtext" required/></td>
+						<td><input type="password" id="login_password" class="inputtext" required/></td>
+						<td><button id="loginbutton">Log In</button></td>
+					</tr>
+
+					<tr style="height: 20px">
+						<td></td>
+						<td><a href="" style="color:white;text-decoration:none;padding-top: 3px;">Forgot password?</a></td>
+					</tr>
+				</table>
+
+			</form>
+		</div>
+	</div>
+	<div class="main">
+		<div class="wrapper">
+			<img src="./img/socialMedia.png" class="logopic"/>
+
+
+
+<!-- 
+
+			<div class="container">
+				<form id="form" action="/">
+					<h1>Registration</h1>
+					<div class="input-control">
+						<label for="username">Username</label>
+						<input id="username" name="username" type="text">
+						<div class="error"></div>
+					</div>
+					<div class="input-control">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="text">
+						<div class="error"></div>
+					</div>
+					<div class="input-control">
+						<label for="password">Password</label>
+						<input id="password"name="password" type="password">
+						<div class="error"></div>
+					</div>
+					<div class="input-control">
+						<label for="password2">Password again</label>
+						<input id="password2"name="password2" type="password">
+						<div class="error"></div>
+					</div>
+					<button type="submit">Sign Up</button>
+				</form>
+			</div> -->
+
+
+
+		<div class="signup">
+			<h2 style="text-align:center;">Welcome to the social network</h2>
+            <h2 style="text-align:center;">Registration</h2>
+
+			<form id="form"  action="/">
+				<table id="signuptable">
+					<div class="input-control">
+						<label for="fname">Name:</label>
+						<input type="text" id="first_name" class="inputtext2" name="first_name"/>
+						<div class="error"></div>
+					</div>
+					<div class="input-control">
+						<label for="lname">Surname:</label>
+						<input type="text" id="last_name" class="inputtext2" name="last_name"/>
+						<div class="error"></div>
+					</div>
+					<div class="input-control">
+						<label for="pwd">Country:</label>
+						<input type="country" id="country" class="inputtext2" name="country"/>
+						<div class="error"></div>
+					</div>
+
+					<div  class="input-control">
+						<label for="emailadd"> Email:</label>
+						<input type="email" id="email" class="inputtext2" name="email"/>
+						<div class="error"></div>
+					</div>
+
+					<div  class="input-control">
+						<label for="pwd">Password:</label>
+						<input type="password" id="password" class="inputtext2" name="password"/>
+						<div class="error"></div>
+						<button type="submit" id="joinnowbttn">Sign up</button>
+					</div>
+				</table>
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="wrapper">
+			<div class="foot">
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Privacy and Policy</a></li>
+					<li><a href="">Help</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="./js/Session.js"></script>
+	<script src="./js/User.js"></script>
+    <script src="./js/app.js"></script>
+	<!-- <script src="./js/Validator.js"></script> -->
+</body>
+</html>
