@@ -3,7 +3,8 @@
 
 - Login, Signup, Logout.
 - If you have not logged out, the application remembers.
-- Post photo posts from camera or gallery
+- Post photo posts from camera or gallery.
+- Change profile picture.
 - Like posts
 - View all likes on a post
 - Comment on posts
