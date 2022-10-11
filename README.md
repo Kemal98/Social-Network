@@ -1,5 +1,5 @@
 
-### Online Social-Network implemented in Java Script using Backend Moc API
+### Online Social-Network implemented in Java Script using Backend MockAPI.
 
 - Login, Signup, Logout.
 - If you have not logged out, the application remembers.
